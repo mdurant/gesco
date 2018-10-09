@@ -14,19 +14,19 @@ let mix = require("laravel-mix");
 mix.styles(
     [
         // todos los archivos a compilar css
-        "resourcesassets\templatecss\font-awesome.min.css",
-        "resourcesassets\templatecsssimple-line-icons.min.css",
-        "resourcesassets\templatecssstyle.css"
+        "resources/assets/template/css/font-awesome.min.css",
+        "resources/assets/template/css/simple-line-icons.min.css",
+        "resources/assets/template/css/style.css"
     ],
-    "publiccss\template.css"
+    "public/css/template.css"
 ).scripts(
     [
-        "resourcesassets\templatejs\bootstrap.min.js",
-        "resourcesassets\templatejsChart.min.js",
-        "resourcesassets\templatejsjquery.min.js",
-        "resourcesassets\templatejspace.min.js",
-        "resourcesassets\templatejspopper.min.js",
-        "resourcesassets\templatejs\template.js"
+        "resources/assets/template/js/jquery.min.js",
+        "resources/assets/template/js/popper.min.js",
+        "resources/assets/template/js/bootstrap.min.js",
+        "resources/assets/template/js/Chart.min.js",
+        "resources/assets/template/js/pace.min.js",
+        "resources/assets/template/js/template.js"
     ],
-    "publiccss\template.js"
-);
+    "public/js/template.js"
+).js(["resources/assets/js/app.js"], "public/js/app.js");
